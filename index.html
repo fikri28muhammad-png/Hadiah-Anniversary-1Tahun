@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1st Anniversary, Sayang</title>
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Bagian Kode Masuk -->
+    <div id="login-screen">
+        <div class="login-box">
+            <h2>Hanya Untukmu ❤️</h2>
+            <p>Masukkan kode di bawah ini:</p>
+            <input type="password" id="pass-input" placeholder="Masukkan Kode...">
+            <button onclick="checkCode()">Buka Pesan</button>
+            <p id="error-msg">Kode salah, coba lagi ya!</p>
+        </div>
+    </div>
+
+    <!-- Bagian Konten Utama -->
+    <div id="main-content">
+        <div class="container fade-in">
+            <div class="profile-section">
+                <h1>Happy 1st Anniversary, Sayang❤️</h1>
+                <div class="message-box">
+                    <div class="sender-name">From: Fikri ❤️</div>
+                    <p>Terimakasih Sudah hadir dan bertahan sampai sejauh ini 1 tahun sudah kita lewati bersama.
+                        banyak hal yang kita lewati bersama, mulai dari tawa,cerita sampai hal hal kecil yang 
+                        selalu membuat hari terasa lebih baik.
+                    </p>
+                    <p>Aku sangat bersyukur bisa mengenalmu ,menjadi bagian dalam hidupmu dan memilikimu.
+                        Semoga hubungan selalu di penuhi kebahagiaan,pengertian,dan cinta yang terus tumbuh setiap harinya.
+                        Aku harap kita selalu bisa terus menerus bersmaa sama,membuat lebih banyak kenangan indah bersama,dan saling 
+                        menemani dalam setiap langkah kedepann❤️.
+                    </p>
+                    
+                    <div class="sender-name">To : Andini Chastika Putri ❤️</div>
+                </div>
+            </div>
+
+<!-- Bagian Galeri Foto -->
+<div class="gallery">
+    <div class="photo-frame">
+        <img src="Foto1.jpg" alt="Momen 1">
+        <p>Manis</p>
+    </div>
+    <div class="photo-frame">
+        <img src="Foto3.jpg" alt="Momen 2">
+        <p>Cantikk</p>
+    </div>
+    <div class="photo-frame">
+        <img src="Foto2.jpg" alt="Momen 3">
+        <p>Lucuu</p>
+    </div>
+</div>
+
+<!-- POSISI BARU: Kotak Pesan Klik (Zoom) berada di bawah foto -->
+<div class="message-grid">
+    <div class="zoom-card" onclick="zoomIn(this)">
+        <p>Klik!</p>
+        <span class="full-text">Kamu adalah salah satu alasanku semangat dan tidak pernah menyerah untuk melakukan apapun ❤️</span>
+    </div>
+    <div class="zoom-card" onclick="zoomIn(this)">
+        <p>Klik!</p>
+        <span class="full-text">Terimakasih sudah banyak sabar sama aku , banyak kesalhanku ke kamu 
+            tetapi kamu tetap sabar menghadapi semua. 🌸</span>
+    </div>
+    <div class="zoom-card" onclick="zoomIn(this)">
+        <p>Klik!</p>
+        <span class="full-text">Aku berharap kita selalu bersama sama tanpa ada perpisahan di antara kamu dan aku 💍</span>
+    </div>
+</div>
+
+<!-- Overlay untuk efek Zoom (Tetap letakkan di bagian bawah sebelum </body>) -->
+<div id="zoom-overlay" onclick="zoomOut()">
+    <div id="zoom-content"></div>
+</div>
+
+    <!-- Menghubungkan JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
